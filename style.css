@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 1000px;
+    grid-gap: 30px;
+}
+.person{
+    display: grid;
+    grid-area: 1/1/3/2;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+    width: 100%;
+}
+.person .top{
+    background-color: hsl(246, 80%, 60%);
+    width: 100%;
+    padding: 25px;
+    border-radius: 20px;
+}
+.person .info p{
+    color: hsl(236, 100%, 87%);
+}
+.person .info h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+.person .top img{
+    width: 80px;
+    margin-bottom: 25px;
+}
+.person .btm{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 15px;
+   margin-left: 25px;
+   color: hsl(235, 45%, 61%);
+   font-size: 18px;
+}
+.person .btm .a{
+    cursor: pointer;
+}
+.person .btm .a:hover{
+    color: white;
+    transition: 0.3s ease;
+}
+.person .btm .b{
+    cursor: pointer;
+}
+.person .btm .b:hover{
+    color: white;
+    transition: 0.3s ease;
+}
+.person .btm .c{
+    cursor: pointer;
+}
+.person .btm .c:hover{
+    color: white;
+    transition: 0.3s ease;
+}
+.work{
+    display: grid;
+    grid-area: 1/2/2/3;
+    background-color: hsl(15, 100%, 70%);
+    width: 100%;
+    background-image: url(icon-work.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: -1rem;
+    border-radius: 18px;
+}
+.work .info1{
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.work .info1:hover{
+    background-color: hsl(236, 36%, 25%);
+}
+.work .info1 .head1{
+    display: flex;
+    justify-content: space-between;
+}
+.work .info1 .head1 .imgaa{
+    margin-bottom: 4px;
+}
+.work .info1 .head1 p{
+    color: white;
+    font-weight: 500;
+}
+.work .core1 h1{
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.work .core1 p{
+    color: hsl(236, 100%, 87%);
+}
+.play .core2 p{
+    color: hsl(236, 100%, 87%);
+}
+.study .core3 p{
+    color: hsl(236, 100%, 87%);
+}
+.exercise .core4 p{
+    color: hsl(236, 100%, 87%);
+}
+.social .core5 p{
+    color: hsl(236, 100%, 87%);
+}
+.self .core6 p{
+    color: hsl(236, 100%, 87%);
+}
+.play{
+    display: grid;
+    grid-area: 1/3/2/4;
+    background-color: hsl(195, 74%, 62%);
+    width: 100%;
+    background-image: url(icon-play.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: -1rem;
+    border-radius: 18px;
+}
+.play .info2{
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.play .info2:hover{
+    background-color: hsl(236, 36%, 25%);
+}
+.play .info2 .head2{
+    display: flex;
+    justify-content: space-between;
+}
+.play .info2 .head2 .imgaa2{
+    margin-bottom: 4px;
+}
+.play .info2 .head2 p{
+    color: white;
+    font-weight: 500;
+}
+.play .core2 h1{
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.study{
+    display: grid;
+    grid-area: 1/4/2/5;
+    background-color: hsl(348, 100%, 68%);
+    width: 100%;
+    background-image: url(icon-study.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: -1rem;
+    border-radius: 18px;
+}
+.study .info3{
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.study .info3:hover{
+    background-color: hsl(236, 36%, 25%);
+}
+.study .info3 .head3{
+    display: flex;
+    justify-content: space-between;
+}
+.study .info3 .head3 .imgaa3{
+    margin-bottom: 4px;
+}
+.study .info3 .head3 p{
+    color: white;
+    font-weight: 500;
+}
+.study .core3 h1{
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.exercise{
+    display: grid;
+    grid-area: 2/2/3/3;
+    background-color: hsl(145, 58%, 55%);
+    width: 100%;
+    background-image: url(icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: -0.2rem;
+    border-radius: 18px;
+}
+.exercise .info4{
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.exercise .info4:hover{
+    background-color: hsl(236, 36%, 25%);
+}
+.exercise .info4 .head4{
+    display: flex;
+    justify-content: space-between;
+}
+.exercise .info4 .head4 .imgaa4{
+    margin-bottom: 4px;
+}
+.exercise .info4 .head4 p{
+    color: white;
+    font-weight: 500;
+}
+.exercise .core4 h1{
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.social{
+    display: grid;
+    grid-area: 2/3/3/4;
+    background-color: hsl(264, 64%, 52%);
+    width: 100%;
+    background-image: url(icon-social.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: -0.7rem;
+    border-radius: 18px;
+}
+.social .info5{
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.social .info5:hover{
+    background-color: hsl(236, 36%, 25%);
+}
+.social .info5 .head5{
+    display: flex;
+    justify-content: space-between;
+}
+.social .info5 .head5 .imgaa5{
+    margin-bottom: 4px;
+}
+.social .info5 .head5 p{
+    color: white;
+    font-weight: 500;
+}
+.social .core5 h1{
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.self{
+    display: grid;
+    grid-area: 2/4/3/5;
+    background-color: hsl(43, 84%, 65%);
+    width: 100%;
+    background-image: url(icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: -0.5rem;
+    border-radius: 18px;
+}
+.self .info6{
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.self .info6:hover{
+    background-color: hsl(236, 36%, 25%);
+}
+.self .info6 .head6{
+    display: flex;
+    justify-content: space-between;
+}
+.self .info6 .head6 .imgaa6{
+    margin-bottom: 4px;
+}
+.self .info6 .head6 p{
+    color: white;
+    font-weight: 500;
+}
+.self .core6 h1{
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.hidden{
+    display: none;
+}
+@media screen and (max-width:700px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0 20px;
+    }
+    .person .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .person .info h1 br{
+        display: none;
+    }
+    .person .btm{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 25px;
+    }
+    .core1, .core2, .core3, .core4, .core5, .core6{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .core1, .core2, .core3, .core4, .core5, .core6 p{
+        padding-top: 5px;
+    }
+}
